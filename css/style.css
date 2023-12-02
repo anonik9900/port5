@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #111;
+  }
+  h1 {
+    font-size: 3em;
+    margin: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .intro {
+    text-align: center;
+    padding: 20px;
+  }
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #111;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  .button:hover {
+    background-color: #ddd;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    text-align: center;
+  }
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  /* ... (resto dello stile rimane invariato) ... */
+  .social-icons {
+    margin-top: 20px;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  /* Aggiunto stile specifico per le icone dei social network */
+  .social-icons a.icon-fb {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  .social-icons a.icon-twitter {
+    background-color: #1da1f2;
+    color: #fff;
+  }
+  .social-icons a.icon-linkedin {
+    background-color: #0077b5;
+    color: #fff;
+  }
+
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Aggiunto spazio tra le icone social e il pulsante */
+  }
+
+   /* Nuovi stili per la navbar */
+  /* Stili per la navbar */
+  .navbar {
+    background-color: #111;
+    overflow: hidden;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+  .navbar a.icon {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar.responsive .icon {
+      display: block;
+      float: right;
+    }
+    .navbar.responsive a {
+      display: block;
+      float: none;
+      text-align: left;
+    }
+    .navbar:not(.responsive) a {
+      display: none;
+    }
+  }
+  .active {
+    background-color: #ddd;
+    color: #000;
+  }
+
+   /* Stili per rendere il sito responsive */
+   @media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .navbar.responsive a {
+      display: block;
+      float: none;
+      text-align: left;
+    }
+    .navbar:not(.responsive) a {
+      display: none;
+    }
+    /* Altri stili responsive per adattare i diversi elementi della pagina */
+    header {
+      padding: 30px 0;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    .intro {
+      padding: 10px;
+    }
+    .section {
+      padding: 30px 10px;
+    }
+    .button {
+      padding: 8px 16px;
+    }
+  }
+
+     /* Stili per rendere il sito responsive */
+     @media screen and (max-width: 768px) {
+    .services, .testimonials, .skills {
+      padding: 20px 10px;
+    }
+    .services h2, .testimonials h2, .skills h2 {
+      font-size: 1.8em;
+    }
+    .services p, .testimonials p, .skills p {
+      font-size: 14px;
+    }
+    .skills .skill-bar {
+      width: 80%;
+    }
+  }
+
+     /* Stili per rendere il sito responsive */
+  @media screen and (max-width: 768px) {
+    /* ... (Stili precedenti per rendere il sito responsive) ... */
+    /* Aggiunta di stili responsive per i nuovi elementi */
+    .services, .testimonials {
+      padding: 30px 10px;
+    }
+    .services h2, .testimonials h2 {
+      font-size: 2em;
+    }
+    .services p, .testimonials p {
+      font-size: 16px;
+    }
+  }
+
+  /* Nuovi stili per le sezioni Servizi e Testimonianze */
+  .services, .testimonials {
+    text-align: center;
+  }
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  .services ul li {
+    margin-bottom: 10px;
+  }
+  .testimonials .testimonial {
+    margin-top: 20px;
+  }
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+  .testimonials blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+  }
+
+   /* Stili per la sezione Skills Bars */
+   .skills {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .skills .skill {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+  }
+  .skills .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .skills .skill-bar {
+    width: 60%; /* Larghezza relativa al contenitore */
+    height: 15px;
+    background-color: #444;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Per centrare la skill bar */
+  }
+  .skills .skill-bar-fill {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .skills .skill-html .skill-bar {
+    width: 90%; /* Larghezza relativa al contenitore */
+  }
+  .skills .skill-css .skill-bar {
+    width: 80%; /* Larghezza relativa al contenitore */
+  }
+
+  .skills .skill-js .skill-bar {
+    width: 50%; /* Larghezza relativa al contenitore */
+  }
+  /* Aggiungi stili per altre skills bars */
+
+  /* Stili per il testo % */
+  .skills .skill-percent {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 12px;
+    color: black;
+  }
+
+   /* Stili per la sezione Portfolio */
+   .portfolio .project {
+    margin-bottom: 30px;
+  }
+  .portfolio .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .portfolio .project-info {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .portfolio .project-info h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  .portfolio .project-info p {
+    margin-bottom: 0;
+  }
